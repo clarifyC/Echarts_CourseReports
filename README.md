@@ -4,7 +4,7 @@ Eharts课程作业,实验报告,测试demo;
 ## 1 experience01
 #### 1.1 question01 旭日图;多页legend
 ![image](https://user-images.githubusercontent.com/97179240/171097369-c33fa4d0-11b9-4480-acbd-4106ea073c1c.png)
-### 1.2 question02 柱状图;折线图;标记点
+### 1.2 question02 柱状图;折线图;标记点;坐标轴;网格
 ![image](https://user-images.githubusercontent.com/97179240/171185066-35369db5-8996-4595-9b80-660b3d1c2ae4.png)
 
 
@@ -41,5 +41,28 @@ Eharts课程作业,实验报告,测试demo;
 ![image](https://user-images.githubusercontent.com/97179240/171190135-ba1ae081-be9f-4d0f-9ad6-261d2689dc78.png)
 ### 4.3 question03 数据大屏3;折线图;柱状图;旭日图;
 ![image](https://user-images.githubusercontent.com/97179240/171190246-4d1bc88a-2fe6-4e7e-85f6-b1a2604d4b90.png)
+
+
+## 5 example1
+### 5.1 NewFile html;表格;背景;
+![image](https://user-images.githubusercontent.com/97179240/171194427-0e695eb3-0c75-4d3d-9f0f-cd65cec7c84c.png)
+### 5.2 NewFile2 柱状图;柱子背景;
+![image](https://user-images.githubusercontent.com/97179240/171194779-f71cd16f-f67e-46d9-ab75-9eef7393b468.png)
+### 5.3 NewFile2 柱状图;工具箱;
+![image](https://user-images.githubusercontent.com/97179240/171195103-e20a5d68-1dac-40b6-b9a9-1e9bc6e672dc.png)
+
+
+## 6 example2
+### 6.1  question1 柱状图;工具箱;
+![image](https://user-images.githubusercontent.com/97179240/171195889-a5edc866-2ac5-4553-9de7-8f07a1ed94c7.png)
+### 6.2  question1 折线图;区域数据缩放;标记点;
+![image](https://user-images.githubusercontent.com/97179240/171196145-008f3407-de4d-4ac5-b7d9-6fdddf1aa635.png)
+
+
+## 7 example3 
+### 7.1 question1 汽车仪表盘;
+![image](https://user-images.githubusercontent.com/97179240/171196381-d9bc0a55-ca09-4488-aeaa-4572b2b56cc6.png)
+
+
 
 
