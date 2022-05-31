@@ -63,6 +63,14 @@ Eharts课程作业,实验报告,测试demo;
 ### 7.1 question1 汽车仪表盘;
 ![image](https://user-images.githubusercontent.com/97179240/171196381-d9bc0a55-ca09-4488-aeaa-4572b2b56cc6.png)
 
-
+## 8 7c7c
+### 8.1 qq2 网格中的雷达图;四维数据;
+![image](https://user-images.githubusercontent.com/97179240/171198425-7762fd03-5d7f-4c99-93b3-e9176d2dd4e2.png)
+### 8.2 qq3
+![Uploading image.png…](
+### 8.3 qq4
+![image](https://user-images.githubusercontent.com/97179240/171198662-89a06185-fdb8-4279-b9a7-72a1c56f29bb.png)
+### 8.4 qq5 折线图;三个Y轴;
+![image](https://user-images.githubusercontent.com/97179240/171198717-412dce38-f1bd-433f-8706-e7e83720d3ed.png)
 
 
