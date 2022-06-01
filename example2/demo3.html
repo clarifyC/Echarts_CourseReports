@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<script type="text/javascript">
+    export function csvToJson(filePath) {
+        let result = []
+        var xhr = new XMLHttpRequest();
+        xhr.open("GET", filePath, false);
+        xhr.onload = function (e) {
+            if (xhr.readyState === 4) {
+                if (xhr.status === 200) {
+                    result = csvJSON(xhr.responseText)
+                } else {
+                    console.error(xhr.statusText);
+                }
+            }
+        };
+        xhr.send(null);
+        return result
+    }
+
+    csvToJson()
+
+
+</script>
+</body>
+</html>

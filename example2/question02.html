@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html style="height: 100%">
+    <head>
+        <meta charset="utf-8">
+    </head>
+    <body style="height: 100%; margin: 0">
+        <div id="container" style="height: 100%"></div>
+        <script type="text/javascript" src="./echarts.js"></script>
+        <script type="text/javascript" src="./chalk.js"></script>
+        <script type="text/javascript">
+            var dom = document.getElementById("container");
+            var myChart = echarts.init(dom,'chalk');
+            var app = {};
+            var option;
+
+            option = {
+                title: {
+                    text: '中美两个金牌数目变化折线图',
+                    align:'center',
+                    backgroundColor: 'yellow',
+                    x:'center',
+                    textStyle:{
+                        fontSize:30
+                    }
+              },
+                tooltip: {
+                trigger: 'axis'
+              },
+                legend: {
+                    left: "20%",
+                },
+                toolbox: {
+                show: true,
+                feature: {
+                  dataZoom: {
+                    yAxisIndex: 'none',
+                  },
+                  dataView: { readOnly: false },
+                  magicType: { type: ['line', 'bar'] },
+                  restore: {},
+                  saveAsImage: {}
+                }
+              },
+              xAxis: {
+                  type: 'category',
+                  name:'奥运年份',
+                  nameLocation:'middle',
+                  boundaryGap: false,
+                  data: ['1984', '1988', '1992', '1996', '2000', '2004', '2008','2012','2016','2020'],
+                  nameTextStyle: {
+                      color: "rgba(0, 0, 0, 1)",
+                      fontStyle: "normal",
+                      fontWeight: "bold",
+                      align: "center",
+                      lineHeight: 27,
+                      fontSize: 17
+                  }
+              },
+              yAxis: {
+                  name:'金牌数量',
+                  nameLocation:'middle',
+                  nameTextStyle: {
+                      color: "rgba(0, 0, 0, 1)",
+                      fontStyle: "normal",
+                      fontWeight: "bold",
+                      align: "center",
+                      lineHeight: 27,
+                      fontSize: 17
+                  },
+                  type: 'value',
+              },
+              series: [
+                {
+                  name: '中国',
+                  type: 'line',
+                  data: [15, 5, 16, 16, 28, 32, 51,38,26,38],
+                  markPoint: {
+                    data: [
+                      { type: 'max', name: '中国最多金牌数' },
+                      { type: 'min', name: '中国最少金牌数' }
+                    ]
+                  },
+                  markLine: {
+                    data: [{ type: 'average', name: '中国平均金牌数' }]
+                  }
+                },
+                {
+                  name: '美国',
+                  type: 'line',
+                  data: [83, 36, 34, 44, 37, 35, 36,46,46,39],
+                  markPoint: {
+                      data: [
+                          { type: 'max', name: '美国最多金牌数' },
+                          { type: 'min', name: '美国最少金牌数' }
+                      ]
+                  },
+                  markLine: {
+                    data: [
+                      { type: 'average', name: '美国金牌平均数' },
+                    ]
+                  }
+                }
+              ]
+            };
+
+        if (option && typeof option === 'object') {
+            myChart.setOption(option);
+}
+        </script>
+    </body>
+</html>
+    

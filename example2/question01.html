@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html style="height: 100%">
+    <head>
+        <meta charset="utf-8">
+    </head>
+    <body style="height: 70%;width: 90%; margin: 70px">
+        <div id="container" style="height: 100%"></div>
+        <script type="text/javascript" src="./echarts.js"></script>
+        <script type="text/javascript">
+            var dom = document.getElementById("container");
+            var myChart = echarts.init(dom);
+            var app = {};
+            var option;
+            option = {
+                xAxis: {
+                    type: 'category',
+                    name:'国家',
+                    data: ['美国','中国','日本','英国','俄罗斯奥运队','澳大利亚','荷兰','法国','德国','意大利']
+                },
+                yAxis: {
+                    type: 'value',
+                    name:'数量',
+                },
+                series: [
+                {
+                    name:'数量',
+                    data: [39,38,27,22,20,17,10,10,10,10],
+                    type: 'bar',
+                    showBackground: true,
+                    backgroundStyle: {
+                    color: 'rgba(180, 180, 180, 0.2)'
+                    }
+                }
+                ],
+                title: {
+                    text: '2020东京奥运会金牌榜前十名'
+                },
+                tooltip: {
+                    trigger: 'axis'
+                },
+                legend: {},
+                toolbox: {
+                    show: true,
+                    feature: {
+                        dataZoom: {
+                            yAxisIndex: 'none',
+                        },
+                        dataView: { readOnly: false },
+                        restore: {},
+                        saveAsImage: {}
+                    }
+                },
+            };
+
+            if (option && typeof option === 'object') {
+                myChart.setOption(option);
+            }
+        </script>
+    </body>
+</html>
+    

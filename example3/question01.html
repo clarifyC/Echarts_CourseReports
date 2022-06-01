@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>cc-homework3</title>
+    <script type="text/javascript" src="./echarts.js"></script>
+</head>
+<body>
+<div id="main" style="width: 1100px;height:550px;"></div>
+<script type="text/javascript">
+    var myChart = echarts.init(document.getElementById('main'),);
+    option = {
+        backgroundColor: '#000',
+        series: [
+            {
+                type: 'gauge',
+                center: ['33%', '50%'],
+                startAngle: 210,
+                endAngle: -30,
+                min: 0,
+                max: 7,
+                splitNumber: 7,
+                radius: "50%",
+                pointer: {
+                    show: true,
+                    showAbove: true,
+                    icon:"rect",
+                    width: 4,
+                    length:"77%",
+                    itemStyle: {
+                        color: "red"
+                    },
+                },
+                axisLine: {
+                    lineStyle: {
+                        width: 10,
+                        shadowColor: "rgba(255, 249, 142, 1)",
+                        shadowBlur: 20,
+                        color: [
+                            [1, new echarts.graphic.LinearGradient(1, 0, 0, 0, [
+                                {
+                                    offset: 0,
+                                    color: '#ff1a40',
+                                },
+                                {
+                                    offset: 0.5,
+                                    color: '#fff01a',
+                                },
+                                {
+                                    offset: 1,
+                                    color: '#1a82ff',
+                                }
+                            ])],
+
+                        ],
+                    }
+                },
+                axisTick: {
+                    distance: 0,
+                    length: 7,
+                    splitNumber: 5,
+                    lineStyle: {
+                        width: 1,
+                        color: '#fff'
+                    }
+                },
+                splitLine: {
+                    distance: 3,
+                    length: 17,
+                    lineStyle: {
+                        width: 2,
+                        color: '#fff'
+                    }
+                },
+                axisLabel: {
+                    fontFamily: "Courier New",
+                    distance: 20,
+                    color: '#fff',
+                    fontSize: 20
+                },
+                anchor: {
+                    show: true,
+                    showAbove: true,
+                    size: 12,
+                    itemStyle: {
+                        color: "red",
+                        borderColor: "rgba(0, 0, 0, 1)",
+                        borderWidth: 3,
+                        borderType: "solid",
+                        shadowBlur: 10,
+                        shadowColor: "rgba(255, 255, 255, 1)",
+                    }
+                },
+                progress: {
+                    show: true,
+                    width:60,
+                    itemStyle: {
+                        color:new echarts.graphic.LinearGradient(1, 0, 0, 0, [
+                            {
+                                offset: 0,
+                                color: 'rgba(255,26,64,0.3)',
+                            },
+                            {
+                                offset: 0.5,
+                                color: 'rgba(255,240,26,0.3)',
+                            },
+                            {
+                                offset: 1,
+                                color: 'rgba(26,130,255,0.3)',
+                            }
+                        ]),
+                    },
+                },
+                title: {
+                    show: true,
+                    offsetCenter: [0, -50],
+                    color: "rgba(255, 255, 255, 1)",
+                    fontStyle: "italic",
+                },
+                detail: {
+                    show:false,
+                },
+                data: [
+                    {
+                        name:'×1000 r/min',
+                        value: 6,
+                    }
+                ]
+            },
+            {
+                type: 'gauge',
+                center: ['67%', '50%'],
+                startAngle: 210,
+                endAngle: -30,
+                min: 0,
+                max: 220,
+                splitNumber: 11,
+                radius: "50%",
+                pointer: {
+                    show: true,
+                    showAbove: true,
+                    icon:"rect",
+                    width: 4,
+                    length:"77%",
+                    itemStyle: {
+                        color: "red"
+                    },
+                },
+                axisLine: {
+                    lineStyle: {
+                        width: 10,
+                        shadowColor: "rgba(255, 249, 142, 1)",
+                        shadowBlur: 20,
+                        color: [
+                            [0.545, '#1a82ff'],
+                            [1, '#ff1a40'],
+
+                        ],
+                    }
+                },
+                axisTick: {
+                    distance: 0,
+                    length: 7,
+                    splitNumber: 5,
+                    lineStyle: {
+                        width: 1,
+                        color: '#fff'
+                    }
+                },
+                splitLine: {
+                    distance: 3,
+                    length: 17,
+                    lineStyle: {
+                        width: 2,
+                        color: '#fff'
+                    }
+                },
+                axisLabel: {
+                    fontFamily: "Courier New",
+                    distance: 20,
+                    color: '#fff',
+                    fontSize: 15
+                },
+                anchor: {
+                    show: true,
+                    showAbove: true,
+                    size: 12,
+                    itemStyle: {
+                        color: "red",
+                        borderColor: "rgba(0, 0, 0, 1)",
+                        borderWidth: 3,
+                        borderType: "solid",
+                        shadowBlur: 10,
+                        shadowColor: "rgba(255, 255, 255, 1)",
+                    }
+                },
+                title: {
+                    show: true,
+                    offsetCenter: [0, -50],
+                    color: "rgba(255, 255, 255, 1)",
+                    fontStyle: "italic",
+                },
+                detail: {
+                    show:true,
+                    valueAnimation: true,
+                    width: '60%',
+                    lineHeight: 40,
+                    borderRadius: 8,
+                    offsetCenter: [0, '25%'],
+                    fontSize: 35,
+                    fontWeight: 'bolder',
+                    color: 'auto'
+                },
+                data: [
+                    {
+                        name:'km/h',
+                        value: 150,
+                    }
+                ]
+            },
+            {
+                type: 'gauge',
+                center: ['33%', '85%'],
+                startAngle: 115,
+                endAngle: 65,
+                min: 0,
+                max: 1,
+                splitNumber: 2,
+                radius: "50%",
+                pointer: {
+                    show: false,
+                },
+                axisLine: {
+                    lineStyle: {
+                        width: 3,
+                        shadowColor: "rgba(255, 249, 142, 1)",
+                        shadowBlur: 20,
+                        color: [
+                            [0.545, '#1a82ff'],
+                            [1, '#ff1a40'],
+
+                        ],
+                    }
+                },
+                axisTick: {
+                    distance: 0,
+                    length: 5,
+                    splitNumber: 5,
+                    lineStyle: {
+                        width: 1,
+                        color: 'auto'
+                    }
+                },
+                splitLine: {
+                    distance: 0,
+                    length: 15,
+                    lineStyle: {
+                        width: 2,
+                        color: 'auto'
+                    }
+                },
+                axisLabel: {
+                    fontFamily: "Courier New",
+                    distance: 7,
+                    color: '#fff',
+                    fontSize: 20,
+                    formatter: function (value) {
+                        if (value === 0) {
+                            return 'C';
+                        } else if (value === 0.5) {
+                            return '💧';
+                        } else if (value === 1) {
+                            return 'H';
+                        }
+                        return '';
+                    }
+                },
+                title: {
+                    offsetCenter: [145, -310],
+                    color: "rgba(255, 255, 255, 1)",
+                    show: true,
+                    fontStyle: "normal",
+                    fontSize: 12,
+                    lineHeight: 20,
+                },
+                detail: {
+                    show:false,
+                },
+                progress: {
+                    show: true,
+                    width:12,
+                    itemStyle: {
+                        color: "rgba(213, 213, 213, 0.5)"
+                    }
+                },
+                data: [
+                    {
+                        name:'行驶时间\n' +
+                            '行驶距离\n' +
+                            '平均耗能\n' +
+                            '平均速度',
+                        value: 0.2,
+                    }
+                ]
+            },
+            {
+                type: 'gauge',
+                center: ['67%', '85%'],
+                startAngle: 115,
+                endAngle: 65,
+                min: 0,
+                max: 1,
+                splitNumber: 2,
+                radius: "50%",
+                pointer: {
+                    show: false,
+                },
+                axisLine: {
+                    lineStyle: {
+                        width: 3,
+                        shadowColor: "rgba(255, 249, 142, 1)",
+                        shadowBlur: 20,
+                        color: [
+                            [0.2, '#ff1a40'],
+                            [0.7, '#1a82ff'],
+                            [1, '#29b312'],
+
+                        ],
+                    }
+                },
+                axisTick: {
+                    distance: 0,
+                    length: 5,
+                    splitNumber: 5,
+                    lineStyle: {
+                        width: 1,
+                        color: 'auto'
+                    }
+                },
+                splitLine: {
+                    distance: 0,
+                    length: 15,
+                    lineStyle: {
+                        width: 2,
+                        color: 'auto'
+                    }
+                },
+                axisLabel: {
+                    fontFamily: "Courier New",
+                    distance: 7,
+                    color: '#fff',
+                    fontSize: 20,
+                    formatter: function (value) {
+                        if (value === 0) {
+                            return 'E';
+                        } else if (value === 0.5) {
+                            return '⛽';
+                        } else if (value === 1) {
+                            return 'F';
+                        }
+                        return '';
+                    }
+                },
+                title: {
+                    offsetCenter: [-165, -310],
+                    color: "rgba(255, 255, 255, 1)",
+                    show: true,
+                    fontStyle: "normal",
+                    fontSize: 12,
+                    lineHeight: 20,
+                },
+                detail: {
+                    show:false,
+                },
+                progress: {
+                    show: true,
+                    width:12,
+                    itemStyle: {
+                        color: "rgba(213, 213, 213, 0.5)"
+                    }
+                },
+                data: [
+                    {
+                        name:'0:00 h\n' +
+                            '0.0 km\n' +
+                            '        ---1/100km\n' +
+                            '   --- km/h',
+                        value: 0.95,
+                    }
+                ]
+            },
+
+        ],
+    };
+    if (option && typeof option === 'object') {
+        myChart.setOption(option);
+    }
+
+</script>
+</body>
+</html>

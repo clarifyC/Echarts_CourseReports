@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>echarts</title>
+    <!-- 引入 echarts.js -->
+    <script src="./echarts.js"></script>
+</head>
+<body>
+<!-- 为ECharts准备一个具备大小（宽高）的Dom -->
+<div id="main" style="width: 600px;height:400px;"></div>
+<script type="text/javascript">
+    // 基于准备好的dom，初始化echarts实例
+    var myChart = echarts.init(document.getElementById('main'));
+    // 指定图表的配置项和数据
+    var option = {
+        title: {
+            text: '2022年3月销量前五车型排行榜',
+            subtext:'制图人：2019147126陈澄'
+        },
+        tooltip: {},
+        legend: {
+            data:['销量']
+        },
+        xAxis: {
+            type: 'category',
+            data: ['宏光MINI EV', '卡罗拉', '轩逸', '凯美瑞', '朗逸']
+        },
+        yAxis: {
+            type: 'value'
+        },
+        series: [
+            {
+                name:'销量',
+                data: [47563, 28984, 28577, 27211, 26040],
+                type: 'bar',
+                showBackground: true,
+                color: 'rgba(194,53,49,1)',
+                backgroundStyle: {
+                    color: 'rgba(180, 180, 180, 0.2)'
+                }
+            }
+        ]
+    };
+    // 使用刚指定的配置项和数据显示图表。
+    myChart.setOption(option);
+</script>
+</body>
+</html>
