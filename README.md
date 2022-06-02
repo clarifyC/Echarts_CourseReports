@@ -1,5 +1,5 @@
 # Echarts_CourseReports
-Eharts课程作业,实验报告,测试demo;
+Eharts课程作业;实验报告;测试demo;测验;
 
 ## 1 experience01
 #### 1.1 question01 旭日图;多页legend
