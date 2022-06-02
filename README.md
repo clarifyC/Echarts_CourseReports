@@ -74,3 +74,13 @@ Eharts课程作业;实验报告;测试demo;测验;
 ![image](https://user-images.githubusercontent.com/97179240/171198717-412dce38-f1bd-433f-8706-e7e83720d3ed.png)
 
 
+## 9 exam
+### 9.1 01 堆积柱状图；水平放置；
+![image](https://user-images.githubusercontent.com/97179240/171662819-39269eb3-183f-4091-8056-e98a35e46441.png)
+### 9.2 02 多柱状图；formatter单独设置某个柱子的颜色与tooltip；
+![image](https://user-images.githubusercontent.com/97179240/171662967-24cc4d13-7b4e-4c8f-8706-51b1b5f16be2.png)
+### 9.3 03 仪表盘；设置detail的显示内容；formatter；
+![image](https://user-images.githubusercontent.com/97179240/171663280-64257a03-ee37-495f-81ae-461a8a847ebc.png)
+### 9.4 04 雷达图；雷达图专属echarts1.js；设置图例符号；填充面积透明度；formatter
+![image](https://user-images.githubusercontent.com/97179240/171663509-2b2454cc-1b4c-4842-8e7d-f142f664b03d.png)
+
